@@ -1,6 +1,6 @@
 FROM python:alpine
 
-RUN apk add --no-cache git libxml2 libxml2-dev libxslt-dev gcc
+RUN apk add --no-cache git libxml2 libxml2-dev libxslt-dev musl-dev gcc
 
 RUN git clone "https://codeberg.org/SimpleWeb/SimplyTranslate-Engines" engines && \
     git clone "https://codeberg.org/SimpleWeb/SimplyTranslate-Web" web
